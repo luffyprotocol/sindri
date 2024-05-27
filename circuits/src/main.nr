@@ -26,12 +26,12 @@ fn main(
 
     verify_squad_hash(selected_player_ids, selected_squad_hash);
 
-    // verify_all_merkle_roots(
-    //     selected_player_ids,
-    //     selected_players_points,
-    //     player_points_merkle_paths,
-    //     all_player_points_merkle_root
-    // );
+    verify_all_merkle_roots(
+        selected_player_ids,
+        selected_players_points,
+        player_points_merkle_paths,
+        all_player_points_merkle_root
+    );
 
     calculate_points(
         selected_players_points,
